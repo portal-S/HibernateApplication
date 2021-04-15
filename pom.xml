@@ -16,6 +16,7 @@
             </activation>
             <properties>
                 <!-- Properties are prefixed with flyway. -->
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                 <flyway.user>bestuser</flyway.user>
                 <flyway.password>bestuser</flyway.password>
                 <flyway.schemas>hibernate</flyway.schemas>
