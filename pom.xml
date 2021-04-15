@@ -15,10 +15,10 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <!-- Properties are prefixed with flyway. -->
                 <maven.compiler.source>15</maven.compiler.source>
                 <maven.compiler.target>15</maven.compiler.target>
                 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <!-- Properties are prefixed with flyway. -->
                 <flyway.user>bestuser</flyway.user>
                 <flyway.password>bestuser</flyway.password>
                 <flyway.schemas>hibernate</flyway.schemas>
