@@ -44,7 +44,7 @@ public class SkillServiceTest {
         Assert.assertEquals(skillService.read("skill read 1"), skill);
     }
 
-    /*@Test
+    @Test
     public void createTest() {
         Skill skill = new Skill(1, "TestSkill");
         given(skillRepository.create(skill)).willReturn(skill);
@@ -56,5 +56,5 @@ public class SkillServiceTest {
         Skill skill = new Skill(1, "TestSkill");
         given(skillRepository.update(skill)).willReturn(skill);
         Assert.assertEquals(skillService.update("skill update 1;TestSkill"), skill);
-    }*/
+    }
 }

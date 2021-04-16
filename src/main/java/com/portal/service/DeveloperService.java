@@ -49,6 +49,7 @@ public class DeveloperService {
             skills.add(skillRepository.read(Integer.parseInt(s)));
         }
         //Developer developer = repository.create(new Developer(0, data[0], data[1], skills, teamRepository.read(Integer.parseInt(data[3]))));
+        System.out.println(new Developer(0, data[0], data[1], skills));
         Developer developer = repository.create(new Developer(0, data[0], data[1], skills));
         System.out.println(developer);
         return developer;

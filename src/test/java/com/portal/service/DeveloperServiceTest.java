@@ -49,7 +49,7 @@ public class DeveloperServiceTest {
         Assert.assertEquals(developerService.read("developer read 1"), developer);
     }
 
-    /*@Test
+    @Test
     public void createTest() {
         Developer developer = new Developer(0, "Ali", "Gus", new ArrayList<>());
         List<Skill> skills = new ArrayList<>();
@@ -57,6 +57,9 @@ public class DeveloperServiceTest {
         skills.add(new Skill(2, ""));
         skills.add(new Skill(3, ""));
         developer.setSkills(skills);
+        given(skillRepository.read(1)).willReturn(new Skill(1, ""));
+        given(skillRepository.read(2)).willReturn(new Skill(2, ""));
+        given(skillRepository.read(3)).willReturn(new Skill(3, ""));
         given(developerRepository.create(developer)).willReturn(developer);
         Assert.assertEquals(developerService.create("developer create Ali;Gus;1,2,3"), developer);
     }
@@ -74,6 +77,6 @@ public class DeveloperServiceTest {
         given(skillRepository.read(2)).willReturn(new Skill(2, ""));
         given(skillRepository.read(3)).willReturn(new Skill(3, ""));
         Assert.assertEquals(developerService.update("developer update 1;Ali;Gus;1,2,3"), developer);
-    }*/
+    }
 
 }

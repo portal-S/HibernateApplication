@@ -110,11 +110,11 @@ public class Developer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Developer developer = (Developer) o;
-        return id == developer.id && Objects.equals(firstName, developer.firstName) && Objects.equals(lastName, developer.lastName) && Objects.equals(skills, developer.skills);
+        return id == developer.id && Objects.equals(firstName, developer.firstName) && Objects.equals(lastName, developer.lastName) && Objects.equals(team, developer.team) && Objects.equals(skills, developer.skills);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, skills);
+        return Objects.hash(id, firstName, lastName, team, skills);
     }
 }
