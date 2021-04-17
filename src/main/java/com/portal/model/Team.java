@@ -70,11 +70,11 @@ public class Team {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Team team = (Team) o;
-        return id == team.id && Objects.equals(name, team.name) && Objects.equals(developers, team.developers);
+        return id == team.id && Objects.equals(name, team.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, developers);
+        return Objects.hash(id, name);
     }
 }
