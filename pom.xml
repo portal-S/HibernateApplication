@@ -15,8 +15,13 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
+<<<<<<< HEAD
                 <maven.compiler.source>1.8</maven.compiler.source>
                 <maven.compiler.target>1.8</maven.compiler.target>
+=======
+                <maven.compiler.source>1.9</maven.compiler.source>
+                <maven.compiler.target>1.9</maven.compiler.target>
+>>>>>>> 760e5b349d9a2b60350ecc83cac51ab9f11f7fd2
                 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
                 <!-- Properties are prefixed with flyway. -->
                 <flyway.user>bestuser</flyway.user>
@@ -56,6 +61,12 @@
             <version>1.2.17</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>3.2.0</version>
+</dependency>
 
 
         <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -81,16 +92,6 @@
 
 
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-                <version>4.0.3</version>
-            </plugin>
-
-        </plugins>
-    </build>
 
 
 
